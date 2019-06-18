@@ -7,7 +7,7 @@ Ssh-agent xonsh integration.
 Install using pip
 
 ```
-pip install hg+https://bitbucket.org/dyuri/xontrib-ssh-agent
+pip install xontrib-ssh-agent
 ```
 
 Add to your `.xonshrc`:
