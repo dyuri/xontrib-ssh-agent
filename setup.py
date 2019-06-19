@@ -8,9 +8,9 @@ except (IOError, OSError):
 
 setup(
     name="xontrib-ssh-agent",
-    version='1.0.0',
+    version='1.0.1',
     url='https://bitbucket.org/dyuri/xontrib-ssh-agent',
-    download_url='https://bitbucket.org/dyuri/xontrib-ssh-agent/get/1.0.0.tar.bz2',
+    download_url='https://bitbucket.org/dyuri/xontrib-ssh-agent/get/1.0.1.tar.bz2',
     license='MIT',
     author='Gyuri Horák',
     author_email='dyuri@horak.hu',
@@ -21,6 +21,7 @@ setup(
     package_dir={'xontrib': 'xontrib'},
     package_data={'xontrib': ['*.xsh']},
     platforms='any',
+    data_files=[("", ["LICENSE.txt"])],
     classifiers=[
         'Environment :: Console',
         'Intended Audience :: End Users/Desktop',
