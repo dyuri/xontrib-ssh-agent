@@ -13,7 +13,7 @@ def sshc(binary="/bin/ssh", options={}):
         opts = {}
         opts.update(options)
         opts.update({"BINARY_SSH": binary})
-        ssh.main([''] + args, opts)
+        return ssh.main([''] + args, opts)
 
     return command
 
