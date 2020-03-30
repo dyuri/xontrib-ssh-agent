@@ -15,7 +15,7 @@ setup(
     author_email='dyuri@horak.hu',
     description='SSH agent integration for xonsh',
     install_requires=[
-        'repassh>=1.0.2',
+        'repassh>=1.0.3',
     ],
     long_description=LONG_DESC,
     long_description_content_type='text/markdown',
