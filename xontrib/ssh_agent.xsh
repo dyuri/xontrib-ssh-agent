@@ -1,7 +1,7 @@
 """Helper function to start SSH agent and add keys using ssh-add
 """
 import builtins
-from xonsh.tools import unthreadable, uncapturable
+from xonsh.tools import uncapturable
 from repassh import ssh
 
 __all__ = ()
@@ -9,7 +9,6 @@ __all__ = ()
 
 def sshc(binary="/bin/ssh", options={}):
     @uncapturable
-    @unthreadable
     def command(args, stdin=None, stdout=None, stderr=None):
         """Launch `repassh` with '[binary]' and the provided arguments
         """

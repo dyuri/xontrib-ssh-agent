@@ -8,7 +8,7 @@ except (IOError, OSError):
 
 setup(
     name="xontrib-ssh-agent",
-    version='1.0.7',
+    version='1.0.8',
     url='https://github.com/dyuri/xontrib-ssh-agent',
     license='MIT',
     author='Gyuri Horák',
