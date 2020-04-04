@@ -27,4 +27,9 @@ builtins.aliases['ssh'] = sshc()
 builtins.aliases['scp'] = sshc("scp")
 builtins.aliases['sftp'] = sshc("sftp")
 builtins.aliases['rsync'] = sshc("rsync", {"SSH_DEFAULT_OPTIONS": ""})
-$GIT_SSH="repassh"
+
+# set $GIT_SSH only if `repassh` can be used
+repassh_command = builtins.__xonsh__.env.get("REPASSH_COMMAND", $(which repassh))
+
+if repassh_command:
+    $GIT_SSH = repassh_command
