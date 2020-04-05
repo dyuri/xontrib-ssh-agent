@@ -33,5 +33,5 @@ builtins.aliases['rsync'] = sshc("rsync", {"SSH_DEFAULT_OPTIONS": ""})
 # set $GIT_SSH only if `repassh` can be used
 repassh_command = builtins.__xonsh__.env.get("REPASSH_COMMAND", which('repassh'))
 
-if repassh_command:
+if 'GIT_SSH' not in ${...} and repassh_command:
     $GIT_SSH = repassh_command
