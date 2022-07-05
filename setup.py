@@ -8,14 +8,14 @@ except (IOError, OSError):
 
 setup(
     name="xontrib-ssh-agent",
-    version='1.0.12',
+    version='1.0.13',
     url='https://github.com/dyuri/xontrib-ssh-agent',
     license='MIT',
     author='Gyuri Horák',
     author_email='dyuri@horak.hu',
     description='SSH agent integration for xonsh',
     install_requires=[
-        'repassh>=1.0.4',
+        'repassh>=1.2.0',
     ],
     long_description=LONG_DESC,
     long_description_content_type='text/markdown',

@@ -35,3 +35,9 @@ repassh_command = builtins.__xonsh__.env.get("REPASSH_COMMAND", which('repassh')
 
 if 'GIT_SSH' not in ${...} and repassh_command:
     $GIT_SSH = repassh_command
+
+# set agent related environment variables
+repassh_agentfile = ssh.get_agent_file()
+if repassh_agentfile:
+    from xonsh.aliases import source_foreign_fn
+    source_foreign_fn('bash', [repassh_agentfile], sourcer="source")
